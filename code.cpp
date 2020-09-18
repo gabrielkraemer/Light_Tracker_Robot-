@@ -52,7 +52,7 @@ void setup() {
   LDR0_mutex = xSemaphoreCreateMutex();
   LDR1_mutex = xSemaphoreCreateMutex();
   
-  // Now set up two tasks to run independently.
+  // Now set up the tasks
   xTaskCreate( producer,  
                "producer",  
                128,                             // This stack size can be checked & adjusted by reading Highwater
